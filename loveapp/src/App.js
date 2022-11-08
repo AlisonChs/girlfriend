@@ -18,32 +18,32 @@ function App() {
     
     <div className="App">
       
-      {step === 0 (
+      {step === 0 && (
         <Password />
       )}
       
-      {step === 1 (
+      {step === 1 && (
         <Wifi />
       )}
 
-      {step === 2 (
+      {step === 2 && (
         <One />
       )}
 
-      {step === 3 (
+      {step === 3 && (
         <Two />
       )}
 
-      {step === 4 (
+      {step === 4 && (
         <Three />
       )}
 
-      {step === 5 (
+      {step === 5 && (
         <Four />
       )}
 
-      {step < 5 ( <button onclick={setStep(step + 1)}> Próximo </button> )}
-      {step < 0 ( <button onclick={setStep(step - 1)}> Voltar </button> )}
+      {step < 5 && ( <button onClick={() => setStep(step + 1)} > Próximo </button> )} 
+      {step > 0 && ( <button onClick={() => setStep(step - 1)} > Voltar </button> )} 
 
     </div>
   );
