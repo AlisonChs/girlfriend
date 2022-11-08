@@ -1,39 +1,44 @@
-import logo from './logo.svg';
 import './App.css';
 
 import { useState } from 'react';
 
-import { Password, Wifi } from './steps';
-import { One, Two, Three, Four } from './steps/questions';
+import { Password } from './steps/Password';
+import { Wifi } from './steps/Wifi';
 
-const [step, setStep] = useState(0);
+import { One } from './steps/questions/One';
+import { Two } from './steps/questions/Two';
+import { Three } from './steps/questions/Three';
+import { Four } from './steps/questions/Four';
 
 function App() {
 
+  const [step, setStep] = useState(0);
+
   return (
+    
     <div className="App">
       
-      {step == 0 (
+      {step === 0 (
         <Password />
       )}
       
-      {step == 1 (
+      {step === 1 (
         <Wifi />
       )}
 
-      {step == 2 (
+      {step === 2 (
         <One />
       )}
 
-      {step == 3 (
+      {step === 3 (
         <Two />
       )}
 
-      {step == 4 (
+      {step === 4 (
         <Three />
       )}
 
-      {step == 5 (
+      {step === 5 (
         <Four />
       )}
 
