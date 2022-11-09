@@ -19,7 +19,7 @@ function App() {
     <div className="App">
       
       {step === 0 && (
-        <Password />
+        <Password setStep={setStep}/>
       )}
       
       {step === 1 && (
@@ -39,11 +39,11 @@ function App() {
       )}
 
       {step === 5 && (
-        <Four />
+        <>
+         <Four />
+         <button className='backButton' onClick={() => setStep(0)} > Voltar ao início </button>
+        </>
       )}
-
-      {step < 5 && ( <button onClick={() => setStep(step + 1)} > Próximo </button> )} 
-      {step > 0 && ( <button onClick={() => setStep(step - 1)} > Voltar </button> )} 
 
     </div>
   );
