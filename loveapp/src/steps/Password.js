@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import '../App.css';
 
 export function Password ({setStep}) {
 
@@ -10,7 +9,7 @@ export function Password ({setStep}) {
     }
 
     const handleNext = () => {
-        inputPassword === 'a' ? setStep(1) : alert('Errou a senha, amor')
+        inputPassword === '40028922' ? setStep(1) : alert('Errou a senha, amor')
     }
 
     return (
@@ -31,7 +30,7 @@ export function Password ({setStep}) {
                     Senha
                 </label>
 
-                <button className='sendPasswordButton' onClick={handleNext}>{'>'}</button>
+                <button className='button next' onClick={handleNext}>{'>'}</button>
             
             </div>
     )

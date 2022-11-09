@@ -48,6 +48,10 @@
   color: #848385
 }
 
+.input:focus, .input:active {
+  background-color: transparent;
+}
+
 .input:focus ~ label, .input:valid ~ label {
   margin-top: -25px;
   -webkit-transition: all 1s ease;
@@ -57,11 +61,23 @@
   transition: all 1s ease;
 }
 
-.sendPasswordButton {
-  width: 10%;
-  margin-top: 15%;
+.button {
   background-color: #6F537B;
   color: white;
-  border-radius: 40%;
   font-weight: bolder;
+  border: 0;
+}
+
+.next {
+  border-radius: 40%;
+  width: 10%;
+  margin-top: 15%;
+}
+
+span {
+  color: white;
+}
+
+b {
+  margin-right: 4%
 }

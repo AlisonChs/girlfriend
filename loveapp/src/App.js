@@ -22,26 +22,35 @@ function App() {
         <Password setStep={setStep}/>
       )}
       
-      {step === 1 && (
-        <Wifi />
-      )}
+      { //This question is totally opcional
+      
+        step === 1 && (
+          <Wifi setStep={setStep}/>
+        )
+      }
 
       {step === 2 && (
-        <One />
+        <One setStep={setStep}/>
       )}
 
       {step === 3 && (
-        <Two />
+        <Two setStep={setStep}/>
       )}
 
       {step === 4 && (
-        <Three />
+        <Three setStep={setStep}/>
       )}
 
       {step === 5 && (
         <>
-         <Four />
-         <button className='backButton' onClick={() => setStep(0)} > Voltar ao início </button>
+         <Four setStep={setStep}/>
+        </>
+      )}
+
+      {step === 6 && (
+        <>
+          <p>Final</p>
+          <button className='button' onClick={() => setStep(0)} > Voltar ao início </button>
         </>
       )}
 
