@@ -9,6 +9,7 @@ import { One } from './steps/questions/One';
 import { Two } from './steps/questions/Two';
 import { Three } from './steps/questions/Three';
 import { Four } from './steps/questions/Four';
+import { Five } from './steps/questions/Five';
 
 function App() {
 
@@ -49,9 +50,15 @@ function App() {
 
       {step === 6 && (
         <>
-          <p>Final</p>
-          <button className='button' onClick={() => setStep(0)} > Voltar ao início </button>
+         <Five setStep={setStep}/>
         </>
+      )}
+
+      {step === 7 && (
+        <div className='final'>
+          <p>Parabéns! Você achou o tesouro</p>
+          <button className='button' onClick={() => setStep(0)} > Voltar ao início </button>
+        </div>
       )}
 
     </div>
