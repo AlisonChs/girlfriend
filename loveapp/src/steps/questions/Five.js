@@ -1,27 +1,27 @@
-// This is the question four
+// This is the question five
 
 import { useState } from 'react';
 
-export function Four ({setStep}) {
+export function Five ({setStep}) {
 
-    const [fourthQuestionValue, setFourthQuestionValue] = useState();
+    const [fifthQuestionValue, setFifthQuestionValue] = useState();
 
-    const handleFourthQuestionValue = (value) => {
-        setFourthQuestionValue(value.target.value)
+    const handleFifthQuestionValue = (value) => {
+        setFifthQuestionValue(value.target.value)
     }
 
     const handleCorrectAnswer = () => {
-        setStep(6);
-        alert('Entre para o estacionamento')
+        setStep(7);
+        alert('Entre dentro do quartinho e resgate seu presente')
     }
 
     const handleNext = () => {
-        fourthQuestionValue === 'answer' || fourthQuestionValue === 'answer' || fourthQuestionValue === 'answer' ? handleCorrectAnswer() : alert('Errou!')
+        fifthQuestionValue === 'answer' || fifthQuestionValue === 'answer' || fifthQuestionValue === 'answer' ? handleCorrectAnswer() : alert('Errou!')
     }
 
     return (
         <>
-            <b><span>4 - </span> Question </b>
+            <b><span>5 - </span> Question </b>
             <div className="group">
 
                 <input
@@ -32,7 +32,7 @@ export function Four ({setStep}) {
                     className="input"
                     name="style1"
                     required
-                    onChange={handleFourthQuestionValue}
+                    onChange={handleFifthQuestionValue}
                 />
 
                 <button className='button next' onClick={handleNext}>{'>'}</button>

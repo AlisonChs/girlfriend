@@ -10,8 +10,13 @@ export function Three ({setStep}) {
         setThirdQuestionValue(value.target.value)
     }
 
+    const handleCorrectAnswer = () => {
+        setStep(5);
+        alert('Perfeito! Desça para a portaria')
+    }
+
     const handleNext = () => {
-        thirdQuestionValue === 'answer' || thirdQuestionValue === 'answer' || thirdQuestionValue === 'answer' ? setStep(5) : alert('Errou!')
+        thirdQuestionValue === 'answer' || thirdQuestionValue === 'answer' || thirdQuestionValue === 'answer' ? handleCorrectAnswer() : alert('Errou!')
     }
 
     return (

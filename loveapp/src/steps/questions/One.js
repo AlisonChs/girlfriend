@@ -10,8 +10,13 @@ export function One ({setStep}) {
         setFirstQuestionValue(value.target.value)
     }
 
+    const handleCorrectAnswer = () => {
+        setStep(3);
+        alert('Parabéns! Agora, saia porta do seu apê e responda a próxima questão')
+    }
+
     const handleNext = () => {
-        firstQuestionValue === 'Parque Villa Lobos' || firstQuestionValue === 'Parque villa lobos' || firstQuestionValue === 'parque villa lobos' ? setStep(3) : alert('Errou!')
+        firstQuestionValue === 'Parque Villa Lobos' || firstQuestionValue === 'Parque villa lobos' || firstQuestionValue === 'parque villa lobos' ? handleCorrectAnswer() : alert('Errou!')
     }
 
     return (

@@ -10,8 +10,13 @@ export function Two ({setStep}) {
         setSecondQuestionValue(value.target.value)
     }
 
+    const handleCorrectAnswer = () => {
+        setStep(4);
+        alert('Boaa, agora, pegue o elevador')
+    }
+
     const handleNext = () => {
-        secondQuestionValue === 'answer' || secondQuestionValue === 'answer' || secondQuestionValue === 'answer' ? setStep(4) : alert('Errou!')
+        secondQuestionValue === 'answer' || secondQuestionValue === 'answer' || secondQuestionValue === 'answer' ? handleCorrectAnswer() : alert('Errou!')
     }
 
     return (
