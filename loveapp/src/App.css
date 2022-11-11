@@ -70,7 +70,7 @@
 
 .next {
   border-radius: 40%;
-  width: 10%;
+  width: 2%;
   margin-top: 15%;
 }
 
@@ -82,8 +82,10 @@ b {
   margin-right: 4%
 }
 
+.red {
+  color: red;
+}
+
 .final {
-  width: 100vw;
-  height: 100vh;
-  background-color: aquamarine;
+  background-color: brown;
 }

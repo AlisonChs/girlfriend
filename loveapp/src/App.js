@@ -10,6 +10,7 @@ import { Two } from './steps/questions/Two';
 import { Three } from './steps/questions/Three';
 import { Four } from './steps/questions/Four';
 import { Five } from './steps/questions/Five';
+import { Roules } from './steps/Roules';
 
 function App() {
 
@@ -31,30 +32,34 @@ function App() {
       }
 
       {step === 2 && (
-        <One setStep={setStep}/>
+        <Roules setStep={setStep}/>
       )}
 
       {step === 3 && (
-        <Two setStep={setStep}/>
+        <One setStep={setStep}/>
       )}
 
       {step === 4 && (
-        <Three setStep={setStep}/>
+        <Two setStep={setStep}/>
       )}
 
       {step === 5 && (
+        <Three setStep={setStep}/>
+      )}
+
+      {step === 6 && (
         <>
          <Four setStep={setStep}/>
         </>
       )}
 
-      {step === 6 && (
+      {step === 7 && (
         <>
          <Five setStep={setStep}/>
         </>
       )}
 
-      {step === 7 && (
+      {step === 8 && (
         <div className='final'>
           <p>Parabéns! Você achou o tesouro</p>
           <button className='button' onClick={() => setStep(0)} > Voltar ao início </button>

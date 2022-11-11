@@ -11,8 +11,8 @@ export function Five ({setStep}) {
     }
 
     const handleCorrectAnswer = () => {
-        setStep(7);
-        alert('Entre dentro do quartinho e resgate seu presente')
+        setStep(8);
+        alert('Parabéns, sabia que completaria 🥰')
     }
 
     const handleNext = () => {
@@ -21,7 +21,7 @@ export function Five ({setStep}) {
 
     return (
         <>
-            <b><span>5 - </span> Question </b>
+            <b><span>5 - </span> Adoção do nosso filho </b>
             <div className="group">
 
                 <input

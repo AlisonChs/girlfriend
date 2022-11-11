@@ -11,17 +11,17 @@ export function Three ({setStep}) {
     }
 
     const handleCorrectAnswer = () => {
-        setStep(5);
-        alert('Perfeito! Desça para a portaria')
+        setStep(6);
+        alert('kkkkkkkkkkkkkkk reza a lenda de que ela vai vender isso algum dia')
     }
 
     const handleNext = () => {
-        thirdQuestionValue === 'answer' || thirdQuestionValue === 'answer' || thirdQuestionValue === 'answer' ? handleCorrectAnswer() : alert('Errou!')
+        thirdQuestionValue === '011101000110' ? handleCorrectAnswer() : alert('Errou!')
     }
 
     return (
-        <>
-            <b><span>3 - </span> Question </b>
+        <div className='three'>
+            <b><span>3 - </span> Que causam prazer sexual; </b>
             <div className="group">
 
                 <input
@@ -38,6 +38,6 @@ export function Three ({setStep}) {
                 <button className='button next' onClick={handleNext}>{'>'}</button>
 
             </div>
-        </>
+        </div>
     )
 }

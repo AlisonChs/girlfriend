@@ -11,16 +11,16 @@ export function Two ({setStep}) {
     }
 
     const handleCorrectAnswer = () => {
-        setStep(4);
+        setStep(5);
         alert('Boaa, agora, pegue o elevador')
     }
 
     const handleNext = () => {
-        secondQuestionValue === 'answer' || secondQuestionValue === 'answer' || secondQuestionValue === 'answer' ? handleCorrectAnswer() : alert('Errou!')
+        secondQuestionValue === '111101110010' ? handleCorrectAnswer() : alert('Errou!')
     }
 
     return (
-        <>
+        <div className='two'>
             <b><span>2 - </span> Question </b>
             <div className="group">
 
@@ -38,6 +38,6 @@ export function Two ({setStep}) {
                 <button className='button next' onClick={handleNext}>{'>'}</button>
 
             </div>
-        </>
+        </div>
     )
 }

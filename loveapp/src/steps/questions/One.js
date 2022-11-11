@@ -11,17 +11,17 @@ export function One ({setStep}) {
     }
 
     const handleCorrectAnswer = () => {
-        setStep(3);
-        alert('Parabéns! Agora, saia porta do seu apê e responda a próxima questão')
+        setStep(4);
+        alert('Parabéns! Esse presente é muito importante pra mim também, pelo trabalho de artesatanato que improvisei')
     }
 
     const handleNext = () => {
-        firstQuestionValue === 'Parque Villa Lobos' || firstQuestionValue === 'Parque villa lobos' || firstQuestionValue === 'parque villa lobos' ? handleCorrectAnswer() : alert('Errou!')
+        firstQuestionValue === '011100000110' ? handleCorrectAnswer() : alert('Errou!')
     }
 
     return (
-        <>
-            <b><span>1 - </span> Qual foi o lugar (físico) em que nos conhecemos?</b>
+        <div className='one'>
+            <b><span>1 - </span> Artefatos comuns em praias; </b>
             <div className="group">
 
                 <input
@@ -38,6 +38,6 @@ export function One ({setStep}) {
                 <button className='button next' onClick={handleNext}>{'>'}</button>
 
             </div>
-        </>
+        </div>
     )
 }

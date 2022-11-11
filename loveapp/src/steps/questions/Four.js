@@ -11,7 +11,7 @@ export function Four ({setStep}) {
     }
 
     const handleCorrectAnswer = () => {
-        setStep(6);
+        setStep(7);
         alert('Entre para o estacionamento')
     }
 
@@ -20,7 +20,7 @@ export function Four ({setStep}) {
     }
 
     return (
-        <>
+        <div className='four'>
             <b><span>4 - </span> Question </b>
             <div className="group">
 
@@ -38,6 +38,6 @@ export function Four ({setStep}) {
                 <button className='button next' onClick={handleNext}>{'>'}</button>
 
             </div>
-        </>
+        </div>
     )
 }
